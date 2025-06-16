@@ -1,0 +1,53 @@
+
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(to bottom, #b388eb, #f7c6ff);
+    color: #4a004e;
+    text-align: center;
+    padding: 20px;
+}
+.timer {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.gallery img {
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.box {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Lightbox style */
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #fff;
+    cursor: pointer;
+}
